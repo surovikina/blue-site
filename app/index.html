@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+class="footer__item-link" <!DOCTYPE html>
 <html lang="sv">
   <head>
     <meta charset="utf-8">
@@ -6,6 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link src="js/script.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -24,7 +29,7 @@
               <li class="main-nav__item"><a class="main-nav__link nh-font" href="#">supports</a></li>
             </ul>
             <div class="main-nav__btn">
-               <a class="main-nav__bok nh-font" href="#"> min bokning</a>
+               <a class="main-nav__bok nh-font" href="#"> min bokning <span class="main-nav__bok-number">1</span> </a>
             </div>
           </div>
         </nav>
@@ -32,29 +37,31 @@
         <p class="main-description">Find and book conference rooms, workspace and pop-up offices</p>
         <div class="main-forma">
           <form class="searchbox" action="index.html" method="post">
+
             <div class="searchbox__top">
-              <input class="searchbox__location" type="search" name="" value="">
+              <input class="searchbox__location" type="search" name="" value="" placeholder="Location">
               <div class="searchbox__data">
-                <button class="searchbox__icon" type="button" name="button"></button>
+                24 Jun 2015
+                <!-- <button class="searchbox__icon" type="button" name="button"></button> -->
               </div>
             </div>
 
             <div class="searchbox__bottom">
               <div class="searchbox__checkbox-block">
-                <input id="check-xs" type="checkbox" name="" value="">
-                <label for="check-xs">xs </label>
+                <input id="check-xs" type="checkbox" name="check" value="">
+                <label for="check-xs">XS <span class="searchbox__person">2-4 personer</span> </label>
                 <input id="check-s" type="checkbox" name="" value="">
-                <label for="check-s"> s</label>
+                <label for="check-s"> S <span class="searchbox__person">5-8 personer</span> </label>
                 <input id="check-m" type="checkbox" name="" value="">
-                <label for="check-m">m</label>
+                <label for="check-m">M<span class="searchbox__person">9-12 personer</span></label>
                 <input id="check-l" type="checkbox" name="" value="">
-                <label for="check-l">l</label>
-                <input id="check-all" type="checkbox" name="" value="">
-                <label for="check-all">all</label>
+                <label for="check-l">L <span class="searchbox__person">13-20 personer</span></label>
+                <input id="check-all" type="checkbox" name="" value="" checked>
+                <label for="check-all">All</label>
               </div>
 
               <button class="searchbox__find" type="submit" name="button">
-                <span><img src="img/magnifying.svg" alt="svg-icon"> SÖK</span>
+                <span><img class="searchbox__find-icon" src="img/forma-icon/search.svg" alt="svg-icon"> SÖK</span>
               </button>
             </div>
           </form>
@@ -134,27 +141,82 @@
 
     <section class="testimonials">
       <h3 class="testimonials__title nh-font">Testimonials</h3>
-      <div class="testimonials__list">
+
+
+
+      <div class="testimonials__list wl-carousel">
         <div class="testimonials__item">
           <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
           <div class="testimonials__foto testimonials__bg-1"></div>
           <span class="testimonials__name">Namn Efternamn</span>
-          <span>Titel</span>
+          <span class="testimonials__name-desk">Titel</span>
         </div>
         <div class="testimonials__item">
           <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
           <div class="testimonials__foto testimonials__bg-2"></div>
           <span class="testimonials__name">Namn Efternamn</span>
-          <span>Titel</span>
+          <span class="testimonials__name-desk">Titel</span>
         </div>
         <div class="testimonials__item">
           <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
           <div class="testimonials__foto testimonials__bg-3"></div>
           <span class="testimonials__name">Dagens Industri</span>
-          <span>17/8-2015</span>
+          <span class="testimonials__name-desk">17/8-2015</span>
         </div>
+        <a class="testimonials__prev" onclick="plusSlides(-1)"> </a>
+        <a class="testimonials__next" onclick="plusSlides(-1)"> </a>
       </div>
+
     </section>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="img/lg.svg" alt="Logo">
+          </a>
+        </div>
+
+        <div class="footer__list">
+          <div class="footer__block-nav">
+            <ul class="footer__list-nav nh-font">
+              <li class="footer__item"><a class="footer__item-link" href="#">About</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">FAQ</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Blog</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Support</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Help forum</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Feedback</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Lorem ipsum</a> </li>
+              <li class="footer__item"><a class="footer__item-link" href="#">Lorem ipsum</a> </li>
+            </ul>
+            <!-- select -->
+            <div class="lang nh-font">
+              <a class="nh-font" href="#"> english</a>
+            </div>
+            <div class="footer__btn btn">
+              <a class="nh-font" href="#">Min boknng</a>
+            </div>
+          </div>
+
+          <div class="footer__info">
+            <div class="footer__info-block">
+              <ul class="footer__info-list">
+                <li class="footer__info-item"> <a class="footer__info-link" href="#">Privacy</a> </li>
+                <li class="footer__info-item"> <a class="footer__info-link" href="#">Terms</a> </li>
+                <li class="footer__info-item"> <a class="footer__info-link" href="#">Safely</a> </li>
+                <li class="footer__info-item"> <a class="footer__info-link" href="#">Help</a> </li>
+              </ul>
+            </div>
+            <div class="footer__icon">
+              <ul class="social-links">
+                <li><a class="social-links__link" href="#" target="_blank"> <img class="social-links__img" src="img/footer-icon/fb.svg" alt="Facebook"> </a></li>
+                <li><a class="social-links__link" href="#" target="_blank"><img class="social-links__img" src="img/footer-icon/tw.svg" alt="Twitter"></a></li>
+                <li><a class="social-links__link" href="#" target="_blank"><img class="social-links__img" src="img/footer-icon/in.svg" alt="Linkedin"></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
