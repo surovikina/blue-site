@@ -415,11 +415,13 @@ a {
         display: block;
         position: absolute;
         top: -75px;;
-        left: 37%;
         background-image: url(../img/pufs-icon/xs.png);
         z-index: 100;
         width: 60px;
         height: 60px;
+        left: 0;
+        right: 0;
+        margin: auto;
       }
 
       &>h4 {
@@ -762,7 +764,7 @@ margin-left: 17px;
 
 @media screen and ( max-width: 650px) {
   .footer__list > .footer__block-nav {
-    display: block;
+    flex-direction: column;
   }
   .footer__list > .footer__block-nav > .footer__list-nav{
     display: block;
@@ -804,7 +806,6 @@ margin-left: 17px;
   }
 
   .main-nav__img {
-    margin-left: 36%;
     margin-bottom: 30px;
   }
 
@@ -815,5 +816,14 @@ margin-left: 17px;
   }
   .main-nav__list {
     margin-bottom: 20px;
+  }
+  .footer__list > .footer__block-nav > .footer__list-nav > .footer__item {
+    padding: 10px 5px;
+  }
+
+  .main-nav__logo{
+    display: flex;
+align-items: center;
+justify-content: center;
   }
 }
