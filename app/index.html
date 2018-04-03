@@ -6,9 +6,9 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link href="css/main.css" rel="stylesheet">
-    <link src="js/script.js">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -35,14 +35,12 @@
         <p class="main-description">Find and book conference rooms, workspace and pop-up offices</p>
         <div class="main-forma">
           <form class="searchbox" action="index.html" method="post">
-
             <div class="searchbox__top">
               <input class="searchbox__location" type="search" name="" value="" placeholder="Location">
               <div class="searchbox__data">
                 <span class="datepicker">24 Jun 2015</span>
               </div>
             </div>
-
             <div class="searchbox__bottom">
               <div class="searchbox__checkbox-block">
                 <input id="check-xs" type="checkbox" name="check" value="">
@@ -56,14 +54,12 @@
                 <input id="check-all" type="checkbox" name="" value="" checked>
                 <label for="check-all">All</label>
               </div>
-
               <button class="searchbox__find" type="submit" name="button">
                 <span><img class="searchbox__find-icon" src="img/forma-icon/search.svg" alt="svg-icon"> SÖK</span>
               </button>
             </div>
           </form>
         </div>
-
         <div class="main-contact">
           For bigger quotes <a class="main-contact__link" href="mail@gmail.com">contact us</a>
         </div>
@@ -133,13 +129,46 @@
       </div>
     </section>
 
-    <section class="slider">
+    <section class="content-section">
+        <div class="content-section__items">
+          <div class="content-section__bg-color">
+            <div class="slider content-section__items-top container">
+              <div class="content-section__main-sl">
+                <img class="content-section__img content-section--first-foto" src="img/sl1.svg" alt="slide">
+                <div class="content-section__deskription">
+                  <h4 class="content-section__title  nh-font ">Lorem ipsum dolor</h4>
+                  <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                </div>
+
+
+              <div>
+                <a href="#"><img class="content-section__img content-section--first-foto" src="img/sl2.png" alt="slide"></a>
+
+              </div>
+              <div>
+                <a href="#"><img class="content-section__img" src="img/sl3.jpg" alt="slide"></a>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="slider-nav-thumbnails content-section__rangers container">
+            <div>x-small <span>2-4 personer</span></div>
+            <div>Small<span>5-8 personer</span> </div>
+            <div>Medium<span>9-12 personer</span> </div>
+            <div>Large<span>13-20 personer</span> </div>
+          </div>
+        </div>
+
     </section>
 
     <section class="testimonials">
       <div class="container">
-        <h3 class="testimonials__title nh-font">Testimonials</h3>
-        <div class="testimonials__list wl-carousel">
+        <h3 class="testimonials__title sl">Testimonials</h3>
+        <div class="testimonials__list sl">
           <div class="testimonials__item">
             <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
             <div class="testimonials__foto testimonials__bg-1"></div>
@@ -158,17 +187,28 @@
             <span class="testimonials__name">Dagens Industri</span>
             <span class="testimonials__name-desk">17/8-2015</span>
           </div>
-          <a class="testimonials__prev" onclick="plusSlides(-1)"> </a>
-          <a class="testimonials__next" onclick="plusSlides(-1)"> </a>
+          <div class="testimonials__item">
+            <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+            <div class="testimonials__foto testimonials__bg-1"></div>
+            <span class="testimonials__name">Namn Efternamn</span>
+            <span class="testimonials__name-desk">Titel</span>
+          </div>
+          <div class="testimonials__item">
+            <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+            <div class="testimonials__foto testimonials__bg-2"></div>
+            <span class="testimonials__name">Namn Efternamn</span>
+            <span class="testimonials__name-desk">Titel</span>
+          </div>
+          <div class="testimonials__item">
+            <p class="testimonials__text">”Encourage your fans to add videos to their own YouTube account and let you know the link – you can add these videos to your channel as Favorites and create a playlist of customer reviews.”</p>
+            <div class="testimonials__foto testimonials__bg-3"></div>
+            <span class="testimonials__name">Dagens Industri</span>
+            <span class="testimonials__name-desk">17/8-2015</span>
+          </div>
         </div>
-
+        <a class="testimonials__prev"> </a>
+        <a class="testimonials__next"> </a>
       </div>
-
-
-
-
-
-
     </section>
 
     <footer class="footer">
@@ -178,7 +218,6 @@
             <img class="footer__logo-img" src="img/lg.svg" alt="Logo">
           </a>
         </div>
-
         <div class="footer__list">
           <div class="footer__block-nav">
             <ul class="footer__list-nav nh-font">
@@ -199,7 +238,6 @@
               <a class="nh-font" href="#">Min boknng</a>
             </div>
           </div>
-
           <div class="footer__info">
             <div class="footer__info-block">
               <ul class="footer__info-list">
@@ -220,5 +258,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
