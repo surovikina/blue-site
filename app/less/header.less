@@ -1,0 +1,326 @@
+.header {
+  height: 100vh;
+  background: #1a2649 url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header .container {
+  height: 100vh;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.main-nav__img img {
+  width: 114px;
+  height: 38px;
+
+  &:hover {
+    width: 130px;
+  }
+}
+
+.main-nav__img {
+  display: inline-block;
+}
+
+.main-nav__list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__link {
+  padding: 32px 19px;
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.main-nav__btn {
+  display: inline-block;
+  min-width: 144px;
+  height: 37px;
+  margin-left: 19px;
+  border-radius: 15px;
+
+  &>.main-nav__bok {
+    position: relative;
+    display: flex;
+    padding: 12px 35px 12px 20px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: @basis;
+    border: 1px solid @basis;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      top: 8px;
+      right: 8px;
+      border-radius: 50%;
+      background-color: #f35f52;
+      vertical-align: middle;
+    }
+
+    &>.main-nav__bok-number {
+      position: absolute;
+      right: 15px;
+      top: 32%;
+      z-index: 6;
+    }
+  }
+}
+
+.main-header {
+  padding-top: 19vh;
+  margin: 0;
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.main-description {
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+// Forma
+.searchbox {
+  margin: 0;
+}
+
+.main-forma {
+  height: auto;
+  max-width: 845px;
+  margin: 7.3vh auto 3.3vh auto;
+  padding: 14px 14px;
+  background-color: rgba(38,38,38, 0.4);
+  box-sizing: border-box;
+}
+
+.searchbox__top {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+
+  &>.searchbox__location {
+    position: relative;
+    box-sizing: border-box;
+    width: 68%;
+    height: 50px;
+    padding-left: 50px;
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #ffffff;
+
+    &:focus {
+      outline: none;
+      border: 2px solid @basis;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    bottom: 12px;
+    background: url("../img/forma-icon/a.svg");
+    z-index: 100;
+  }
+
+
+  &>.searchbox__data {
+    position: relative;
+    width: 28.5%;
+    padding: 15px 50px;
+    color: #242424;
+    background-color: #ffffff;
+    border-left: 1px solid #dadada;
+    border-radius: 0 2px 2px 0;
+    // &:focus {
+    //   outline: none;
+    //   border: 2px solid @basis;
+    // }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 22px;
+      left: 15px;
+      bottom: 12px;
+      background: url("../img/forma-icon/calendar.svg");
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: #1b1c1d transparent transparent transparent;
+      position: absolute;
+      top: 44%;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.searchbox__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.searchbox__checkbox-block {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 83.5%;
+  padding: 15px 0 15px 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 2px;
+  color: #1b1c1d;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    left: 15px;
+    bottom: 12px;
+    background: url("../img/forma-icon/b.svg");
+  }
+
+  &>label {
+    position: relative;
+  }
+
+  &>input,
+    label {
+    cursor: pointer;
+  }
+
+  &>input:checked + label:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url("../img/forma-icon/checking.svg");
+    left: 5px;
+    bottom: 4px;
+  }
+
+  &>input {
+    display: none;
+  }
+
+  &>label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border: 2px solid #1b1c1d;
+    border-radius: 1px;
+    vertical-align: middle;
+  }
+}
+
+.searchbox__person {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.searchbox__find {
+  position: relative;
+  width: 100px;
+  background-color: @basis;
+  border: 2px solid @basis;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(@basis, 15%);
+  }
+}
+.searchbox__find-icon {
+  vertical-align: middle;
+}
+
+.searchbox__find-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.main-contact {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+
+  .main-contact__link {
+    position: relative;
+    color: #ffffff;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff
+    }
+  }
+}
+
+.main-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  padding: 17px 17px;;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}

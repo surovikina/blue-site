@@ -1,0 +1,130 @@
+.testimonials {
+  background-color: @basis;
+}
+
+.testimonials__title {
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.slick-prev {
+  top: 25%;
+  left: -50px;
+  transform:scaleX(-1);
+}
+.slick-next {
+  top: 25%;
+  right: -50px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+   content: "";
+   display: block;
+   width: 35px;
+   height: 60px;
+   background: url(../img/prev.svg);
+   cursor: pointer;
+}
+
+.testimonials__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 82%;
+  margin-top: 56px;
+  padding-bottom: 85px;
+}
+
+.slick-slide {
+  width: 270px;
+  margin-right:0.5%;
+}
+
+.testimonials__item {
+  position: relative;
+  width: 28%;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: #ffffff;
+    bottom: 45%;
+    left: 50%;
+  }
+}
+
+
+.testimonials__text {
+  position: relative;
+  margin: 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.testimonials__text::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 2px;
+  height: 5px;
+  bottom: 0;
+  lift: 0;
+  background-color: #ffffff;
+}
+
+.testimonials__text::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 2px;
+  height: 5px;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.testimonials__foto {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 37px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+}
+
+.testimonials__bg-1 {
+  background-image: url("../img/testimonials/t1.jpg");
+  background-position: center ;
+}
+.testimonials__bg-2 {
+  background-image: url("../img/testimonials/f2.jpg");
+  background-position: right top;
+}
+.testimonials__bg-3 {
+  background-image: url("../img/testimonials/f3.jpg");
+}
+
+.testimonials__name {
+  display: block;
+  font-size: 16px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.testimonials__name-desk {
+  font-size: 16px;
+}

@@ -1,0 +1,142 @@
+.puffs {
+  min-height: 640px;
+  color: #000000;
+  background-color: #efefef;
+}
+
+.puffs__title {
+  margin: 0;
+  padding-top: 57px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #242424;
+}
+
+.puffs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+
+
+  &>.puffs__item {
+    box-sizing: content-box;
+    overflow: hidden;
+    width: 23%;
+    //min-width: 270px;
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    border-radius: 3px 3px 0 0;
+
+    &>.puffs__foto {
+      overflow: hidden;
+      width: auto;
+      height: 182px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .background__foto-1 {
+      background-image: url("../img/puffs-foto/1.jpg");
+    }
+    .background__foto-2 {
+      background-image: url("../img/puffs-foto/2.jpg");
+    }
+    .background__foto-3 {
+      background-image: url("../img/puffs-foto/3.jpg");
+    }
+    .background__foto-4 {
+      background-image: url("../img/puffs-foto/4.jpg");
+    }
+
+    &>.puffs__desk {
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -75px;;
+        background-image: url(../img/pufs-icon/xs.png);
+        z-index: 100;
+        width: 60px;
+        height: 60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      &>h4 {
+        margin: 0;
+        margin-top: 46px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        font-size: 20px;
+        color: @basis;
+      }
+
+      &>p {
+        color: #242424;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        margin: 0;
+        padding-top: 8px;
+      }
+
+      &>span {
+        display: block;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 11px;
+        color: #a3a3a3;
+        text-align: center;
+        border-bottom: 1px solid #efefef;
+      }
+    }
+  }
+  &>.puffs__item:last-child {
+    padding-right: 0;
+  }
+}
+.puffs__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &>.puffs__kr {
+    padding-top: 20px;
+    font-weight: 600;
+    color: #242424;
+  }
+
+  &>.puffs__hour {
+    font-size: 14px;
+    color: #8c8c8c;
+    padding-top: 4px;
+  }
+
+  &>.puffs__more {
+    display: block;
+    margin: 16px 0;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 17px;
+    text-transform: uppercase;
+    border-radius: 14px;
+    background-color: @basis;
+    color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      border: 1px solid @basis;
+      color: @basis;
+      background-color: #ffffff;
+      border-radius: 14px;
+    }
+  }
+}

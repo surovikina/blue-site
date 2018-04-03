@@ -1,3 +1,4 @@
+/* BASE */
 @font-face {
   font-family: 'Nexa Heavy';
   src: url(../fonts/Nexa-Heavy.otf);
@@ -24,7 +25,7 @@ a {
 .nh-font {
   font-family: 'Nexa Heavy', sans-serif;
 }
-/* Hero section */
+/* SECTIONS */
 .header {
   height: 100vh;
   background: #1a2649 url(../img/bg.jpg) no-repeat center;
